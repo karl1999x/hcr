@@ -1,4 +1,11 @@
 #!/usr/bin/env bash
+
+# Agrega el alias al archivo .bashrc
+echo "alias hcr2='/root/hcr.sh'" >> ~/.bashrc
+
+# Recarga el archivo .bashrc para que el alias sea efectivo
+source ~/.bashrc
+
 set -euo pipefail
 
 RED='\033[0;31m'
