@@ -37,7 +37,7 @@ opt_line() {
 TTini='=====>>►► 🔧'
 TTfin='🔧 ◄◄<<====='
 BAR_WIDTH=43
-BARC='\033[0;34m'
+BARC='\033[0;31m'
 draw_bar() { echo -e "${BARC}$(printf '%.0s━' $(seq 1 "${BAR_WIDTH}"))${NC}"; }
 INSTALL_DIR="/etc/hcr-server"
 BINARY_PATH="${INSTALL_DIR}/hcr-server"
@@ -750,14 +750,14 @@ main_menu() {
         print_banner
         print_ports_banner
 
-        echo -e "$(opt_line "01" "Instalar / Actualizar HCR-Server")"
-        echo -e "$(opt_line "02" "Iniciar / Agregar puerto")"
-        echo -e "$(opt_line "03" "Detener / Reactivar puerto")"
-        echo -e "$(opt_line "04" "Editar puerto")"
-        echo -e "$(opt_line "05" "Eliminar puerto")"
-        echo -e "$(opt_line "06" "Ver logs de un puerto")"
-        echo -e " ${OPT_BRACKET}[${RED}09${OPT_BRACKET}]${OPT_ARROW} >${RED} Desinstalar todo${NC}"
-        echo -e " ${OPT_BRACKET}[${GRAY}00${OPT_BRACKET}]${OPT_ARROW} >${GRAY} Salir${NC}"
+        echo -e "$(opt_line "01" "INSTALAR HCR SERVER")"
+        echo -e "$(opt_line "02" "INICIAR / AGREGAR PUERTO")"
+        echo -e "$(opt_line "03" "DETENER / REACTIVAR PUERTO")"
+        echo -e "$(opt_line "04" "EDITAR PUERTO")"
+        echo -e "$(opt_line "05" "ELIMINAR PUERTO")"
+        echo -e "$(opt_line "06" "VER LOGS DE UN PUERTO")"
+        echo -e " ${OPT_BRACKET}[${RED}09${OPT_BRACKET}]${OPT_ARROW} >${RED} DESINSTALAR TODO${NC}"
+        echo -e " ${OPT_BRACKET}[${GRAY}00${OPT_BRACKET}]${OPT_ARROW} >${GRAY} SALIR${NC}"
         echo
         draw_bar
         echo -ne "${YELLOW}▶ Opcion : ${NC}"
